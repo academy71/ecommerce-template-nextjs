@@ -36,8 +36,25 @@ const H5 = styled.h5`
   color: ${THEME.colors.textPrimary};
 `;
 
-const lgDesc = styled.p``;
-const mdDesc = styled.p``;
-const smDesc = styled.p``;
+// lg p
+const lgDesc = styled.p`
+  color: ${THEME.colors.textPrimary};
+  font: normal ${THEME.fontWeight.weightNormal} 18px ${THEME.fontFamily.manrope};
+  line-height: 30px;
+`;
+
+// md p
+const mdDesc = styled.p`
+  color: ${THEME.colors.textPrimary};
+  font: normal ${THEME.fontWeight.weightNormal} 16px ${THEME.fontFamily.manrope};
+  line-height: 28px;
+`;
+
+// sm p
+const smDesc = styled.p`
+  color: ${THEME.colors.textPrimary};
+  font: normal ${THEME.fontWeight.weightNormal} 14px ${THEME.fontFamily.manrope};
+  line-height: 24px;
+`;
 
 export {H1, H2, H3, H4, H5, lgDesc, mdDesc, smDesc};
