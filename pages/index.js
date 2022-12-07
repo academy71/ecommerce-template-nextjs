@@ -1,12 +1,10 @@
-
- const Home = () => {
-  
+import {H1} from "./../styles/ShareStyles";
+const Home = () => {
   return (
     <>
-    <h1>hello</h1>
+      <H1>Hello World !</H1>
     </>
-  )
-}
+  );
+};
 
-
-export default  Home
+export default Home;
