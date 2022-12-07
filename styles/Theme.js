@@ -10,8 +10,8 @@ const THEME = {
     pastelGray: "#C7DEBC",
     papayaWhip: " #FFF3D4",
     btnPrimary: "#00574E",
-    btnSecondary: "#FFD231",
-    btnHover: "#FAE5B9",
+    btnSecondary: "#FAE5B9",
+    btnHover: "#FFD231",
   },
 
   fontFamily: {
