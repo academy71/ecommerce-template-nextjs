@@ -3,7 +3,9 @@ import StyledHeader from './StyledHeader'
 
 const Header = () => {
   return (
-    <StyledHeader>Header</StyledHeader>
+    <StyledHeader>
+      
+    </StyledHeader>
   )
 }
 
