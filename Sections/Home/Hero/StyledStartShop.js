@@ -8,7 +8,6 @@ const StyledStartShop = styled.div`
   background-color: ${THEME.colors.btnSecondary};
   padding: 55px 0;
   width: 100%;
-  height: 100%;
 
   ${media.up("lg")} {
     padding: 46px 0;
