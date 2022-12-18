@@ -1,5 +1,10 @@
-// Member Images
+// Category images import
+import img1 from "./../Images/Category/birthday_flower.png";
+import img2 from "./../Images/Category/sympathy_flower.png";
+import img3 from "./../Images/Category/love_flower.png";
+import img4 from "./../Images/Category/getwell_flower.png";
 
+// Member Images
 import memberImg1 from "../Images/teamMember/Images-1.png";
 import memberImg2 from "../Images/teamMember/Images-2.png";
 import memberImg3 from "../Images/teamMember/Images-3.png";
@@ -8,6 +13,51 @@ import memberImg5 from "../Images/teamMember/Images-5.png";
 import memberImg6 from "../Images/teamMember/Images-6.png";
 
 const DATA = {
+  // Category Section Data
+
+  category_card_data: [
+    {
+      img: img1,
+      name: "Birthday",
+    },
+    {
+      img: img2,
+      name: "Sympathy",
+    },
+    {
+      img: img3,
+      name: "Love & Romance",
+    },
+    {
+      img: img4,
+      name: "Get Well",
+    },
+    {
+      img: img4,
+      name: "Get Well",
+    },
+    {
+      img: img4,
+      name: "Get Well",
+    },
+    {
+      img: img4,
+      name: "Get Well",
+    },
+    {
+      img: img4,
+      name: "Get Well",
+    },
+    {
+      img: img4,
+      name: "Get Well",
+    },
+    {
+      img: img4,
+      name: "Get Well",
+    },
+  ],
+
   // Footer data
   footer: {
     // shop
