@@ -2,6 +2,7 @@ import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import Category from "../Sections/Home/category/Category";
+import Features1 from "../Sections/Home/Features1/Features1";
 import Features3 from "../Sections/Home/Features3/Features3";
 import Hero from "../Sections/Home/Hero/Hero";
 import Features2 from "./../Sections/Home/Features2/Features2";
@@ -11,6 +12,7 @@ const Home = () => {
     <>
       <Header />
       <Hero />
+      <Features1 />
       <Category />
       <Features2 />
       <Features3 />

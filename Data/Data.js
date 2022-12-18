@@ -12,6 +12,12 @@ import memberImg4 from "../Images/teamMember/Images-4.png";
 import memberImg5 from "../Images/teamMember/Images-5.png";
 import memberImg6 from "../Images/teamMember/Images-6.png";
 
+// Features1 
+
+import features1Img1 from "../Images/Features1/img-1.png"
+import features1Img2 from "../Images/Features1/img-2.png"
+import features1Img3 from "../Images/Features1/img-3.png"
+
 const DATA = {
   // Category Section Data
 
@@ -275,6 +281,20 @@ const DATA = {
       desc: "A proven brand builder and entrepreneur with deep experience in innovative media ventures and consumer products.",
       linkText: "Learn More",
       href: "/",
+    },
+  ],
+  features1: [
+    {
+      id: "1",
+      img: features1Img1,
+    },
+    {
+      id: "2",
+      img: features1Img2,
+    },
+    {
+      id: "3",
+      img: features1Img3,
     },
   ],
 };
