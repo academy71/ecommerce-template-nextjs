@@ -7,7 +7,6 @@ import ProductCard from "../../../Components/ProductCard/ProductCard";
 import DATA from "../../../Data/Data";
 
 const ProductSection = () => {
-  console.log(DATA.product.home);
   return (
     <StyledProductSection>
       <Container>
