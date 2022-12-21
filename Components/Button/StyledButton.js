@@ -31,6 +31,7 @@ const StyledButton = styled.div`
   }
 
   /* primary btn  */
+  
   .primary {
     padding: 15px 35px;
     font-size: 18px;
