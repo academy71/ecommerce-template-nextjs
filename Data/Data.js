@@ -17,6 +17,18 @@ import testimonialImg1 from "./../Images/Testimonial/img1.png";
 import testimonialImg2 from "./../Images/Testimonial/img2.png";
 import testimonialImg3 from "./../Images/Testimonial/img3.png";
 
+// Features1 
+import features1Img1 from "../Images/Features1/img-1.png"
+import features1Img2 from "../Images/Features1/img-2.png"
+import features1Img3 from "../Images/Features1/img-3.png"
+
+// Product Card Home
+import productHomeImg1 from "../Images/ProductCard/img-1.png"
+import productHomeImg2 from "../Images/ProductCard/img-2.png";
+import productHomeImg3 from "../Images/ProductCard/img-3.png";
+import productHomeImg4 from "../Images/ProductCard/img-4.png";
+
+
 const DATA = {
   // Testimonial Section Card Data
   testimonial_card_data: [
@@ -310,6 +322,66 @@ const DATA = {
       href: "/",
     },
   ],
+  features1: [
+    {
+      id: "1",
+      img: features1Img1,
+    },
+    {
+      id: "2",
+      img: features1Img2,
+    },
+    {
+      id: "3",
+      img: features1Img3,
+    },
+  ],
+
+  // Product Data 
+
+
+  product: {
+    home: [
+      {
+        id: "1",
+        img: productHomeImg1,
+        bSeller: "Best Seller",
+        title: "Summer Sunset",
+        price: "$60-93",
+        desc: "FLORIST-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "2",
+        img: productHomeImg2,
+        title: "Make Me Blush",
+        price: "$45-70",
+        desc: "FARM-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "3",
+        img: productHomeImg3,
+        bSeller: "Best Seller",
+        title: "Smiles & Sunshine",
+        price: "$48-78",
+        desc: "SHIPPED IN A BOX",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "4",
+        img: productHomeImg4,
+        title: "Fiesta Bouquet",
+        price: "$55-95",
+        desc: "FLORIST-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+    ],
+  },
 };
 
 export default DATA;
