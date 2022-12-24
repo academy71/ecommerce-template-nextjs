@@ -12,14 +12,17 @@ import memberImg4 from "../Images/teamMember/Images-4.png";
 import memberImg5 from "../Images/teamMember/Images-5.png";
 import memberImg6 from "../Images/teamMember/Images-6.png";
 
-// Features1 
+// Testimonial Section Card Images
+import testimonialImg1 from "./../Images/Testimonial/img1.png";
+import testimonialImg2 from "./../Images/Testimonial/img2.png";
+import testimonialImg3 from "./../Images/Testimonial/img3.png";
 
+// Features1 
 import features1Img1 from "../Images/Features1/img-1.png"
 import features1Img2 from "../Images/Features1/img-2.png"
 import features1Img3 from "../Images/Features1/img-3.png"
 
 // Product Card Home
-
 import productHomeImg1 from "../Images/ProductCard/img-1.png"
 import productHomeImg2 from "../Images/ProductCard/img-2.png";
 import productHomeImg3 from "../Images/ProductCard/img-3.png";
@@ -27,6 +30,34 @@ import productHomeImg4 from "../Images/ProductCard/img-4.png";
 
 
 const DATA = {
+  // Testimonial Section Card Data
+  testimonial_card_data: [
+    {
+      img: testimonialImg1,
+      title: "Wonderful Flowers",
+      name: "Mark Wood",
+      description:
+        "Bouquet Flowers looks just like the picture! Wonderful present for my sister. Fresh and beautiful. Great summer bouquet!",
+      number_of_star: [1, 2, 3, 4, 5],
+    },
+    {
+      img: testimonialImg2,
+      title: "Amazing Flowers",
+      name: "Trent Boult",
+      description:
+        "Bouquet Flowers looks just like the picture! Wonderful present for my sister. Fresh and beautiful. Great summer bouquet!",
+      number_of_star: [1, 2, 3, 4, 5],
+    },
+    {
+      img: testimonialImg3,
+      title: "Awesome Flowers",
+      name: "Pat Cummins",
+      description:
+        "Bouquet Flowers looks just like the picture! Wonderful present for my sister. Fresh and beautiful. Great summer bouquet!",
+      number_of_star: [1, 2, 3, 4, 5],
+    },
+  ],
+
   // Category Section Data
 
   category_card_data: [
