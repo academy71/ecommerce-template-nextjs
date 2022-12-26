@@ -3,10 +3,11 @@ import Container from "../../Components/Container/Container";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import StyledCheckOutSection from "./StyledCheckoutSection";
 import { H5, MdPara } from "./../../styles/ShareStyles";
-import Button from "../../Components/Button/Button";
+
 import Link from "next/link";
 import paypalImg from "./../../Images/paypal.svg";
 import Image from "next/image";
+import OredrSummury from "../../Components/OrderSummmury/OredrSummury";
 
 const CheckOutSection = () => {
   return (
@@ -23,28 +24,14 @@ const CheckOutSection = () => {
             </button>
           </div>
           <div className="checkout__price__details">
-            <H5 className="order__summury">Order Summury</H5>
-            <MdPara className="checkout__price">
-              <span>Original Price</span>
-              <span>$246.00</span>
-            </MdPara>
-            <MdPara className="checkout__price">
-              <span>Savings</span>
-              <span>$00.00</span>
-            </MdPara>
-            <MdPara className="checkout__price">
-              <span>Shipping</span>
-              <span>FREE</span>
-            </MdPara>
-            <MdPara className="checkout__price">
-              <span>Estimated Sales Tax</span>
-              <span>$4.00</span>
-            </MdPara>
-            <H5 className="total__price">
-              <span>Total</span>
-              <span>$250.00</span>
-            </H5>
-            <Button text="Proceed to Check Out" variant="primary" />
+            <OredrSummury
+              btnText="Proceed to Check Out"
+              price="$246.00"
+              salesText="$4.00"
+              savings="$00.00"
+              shipping="FREE"
+              title="Order Summury"
+            />
           </div>
         </div>
         {/* Check Out Footer */}
