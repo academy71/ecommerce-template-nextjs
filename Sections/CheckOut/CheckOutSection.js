@@ -26,9 +26,9 @@ const CheckOutSection = () => {
           <div className="checkout__price__details">
             <OredrSummury
               btnText="Proceed to Check Out"
-              price="$246.00"
-              salesText="$4.00"
-              savings="$00.00"
+              price="246.00"
+              salesText="4.00"
+              savings="00.00"
               shipping="FREE"
               title="Order Summury"
             />
