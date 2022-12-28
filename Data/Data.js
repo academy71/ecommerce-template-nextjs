@@ -17,17 +17,31 @@ import testimonialImg1 from "./../Images/Testimonial/img1.png";
 import testimonialImg2 from "./../Images/Testimonial/img2.png";
 import testimonialImg3 from "./../Images/Testimonial/img3.png";
 
-// Features1 
-import features1Img1 from "../Images/Features1/img-1.png"
-import features1Img2 from "../Images/Features1/img-2.png"
-import features1Img3 from "../Images/Features1/img-3.png"
+// Features1
+import features1Img1 from "../Images/Features1/img-1.png";
+import features1Img2 from "../Images/Features1/img-2.png";
+import features1Img3 from "../Images/Features1/img-3.png";
 
 // Product Card Home
-import productHomeImg1 from "../Images/ProductCard/img-1.png"
+import productHomeImg1 from "../Images/ProductCard/img-1.png";
 import productHomeImg2 from "../Images/ProductCard/img-2.png";
 import productHomeImg3 from "../Images/ProductCard/img-3.png";
 import productHomeImg4 from "../Images/ProductCard/img-4.png";
 
+//All Product Page
+
+import productPageImg1 from "../Images/productPage/img-1.png";
+import productPageImg2 from "../Images/productPage/img-2.png";
+import productPageImg3 from "../Images/productPage/img-3.png";
+import productPageImg4 from "../Images/productPage/img-4.png";
+import productPageImg5 from "../Images/productPage/img-5.png";
+import productPageImg6 from "../Images/productPage/img-6.png";
+import productPageImg7 from "../Images/productPage/img-7.png";
+import productPageImg8 from "../Images/productPage/img-8.png";
+import productPageImg9 from "../Images/productPage/img-9.png";
+import productPageImg10 from "../Images/productPage/img-10.png";
+import productPageImg11 from "../Images/productPage/img-11.png";
+import productPageImg12 from "../Images/productPage/img-12.png";
 
 const DATA = {
   // Testimonial Section Card Data
@@ -322,6 +336,7 @@ const DATA = {
       href: "/",
     },
   ],
+
   features1: [
     {
       id: "1",
@@ -337,14 +352,14 @@ const DATA = {
     },
   ],
 
-  // Product Data 
-
+  // Product Data
 
   product: {
     home: [
       {
         id: "1",
         img: productHomeImg1,
+        link: "/products_details",
         bSeller: "Best Seller",
         title: "Summer Sunset",
         price: "$60-93",
@@ -355,6 +370,7 @@ const DATA = {
       {
         id: "2",
         img: productHomeImg2,
+        link: "/products_details",
         title: "Make Me Blush",
         price: "$45-70",
         desc: "FARM-TO-DOOR",
@@ -364,6 +380,7 @@ const DATA = {
       {
         id: "3",
         img: productHomeImg3,
+        link: "/products_details",
         bSeller: "Best Seller",
         title: "Smiles & Sunshine",
         price: "$48-78",
@@ -374,6 +391,255 @@ const DATA = {
       {
         id: "4",
         img: productHomeImg4,
+        link: "/products_details",
+        title: "Fiesta Bouquet",
+        price: "$55-95",
+        desc: "FLORIST-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+    ],
+  },
+
+  // All product filter data
+
+  checkbox_title: {
+    price: [
+      {
+        id: "1",
+        title: "$40-$50",
+      },
+      {
+        id: "2",
+        title: "$50-$75",
+      },
+      {
+        id: "3",
+        title: "$75-$90",
+      },
+      {
+        id: "4",
+        title: "$90-$100",
+      },
+      {
+        id: "5",
+        title: "Over $100",
+      },
+    ],
+    occasion: [
+      {
+        id: "1",
+        title: "Anniversary",
+      },
+      {
+        id: "2",
+        title: "Birthday",
+      },
+      {
+        id: "3",
+        title: "Congratulations",
+      },
+      {
+        id: "4",
+        title: "Love",
+      },
+      {
+        id: "5",
+        title: "Wedding",
+      },
+    ],
+    flower_type: [
+      {
+        id: "1",
+        title: "Daisy",
+      },
+      {
+        id: "2",
+        title: "Hydrangea",
+      },
+      {
+        id: "3",
+        title: "Iris",
+      },
+      {
+        id: "4",
+        title: "Lily",
+      },
+      {
+        id: "5",
+        title: "Rose",
+      },
+      {
+        id: "6",
+        title: "Sunflower",
+      },
+    ],
+    color: [
+      {
+        id: "1",
+        title: "White",
+      },
+      {
+        id: "2",
+        title: "Green",
+      },
+      {
+        id: "3",
+        title: "Pink",
+      },
+      {
+        id: "4",
+        title: "Yellow",
+      },
+      {
+        id: "5",
+        title: "Purple",
+      },
+      {
+        id: "6",
+        title: "Red",
+      },
+      {
+        id: "7",
+        title: "Orange",
+      },
+      {
+        id: "8",
+        title: "Peach",
+      },
+      {
+        id: "9",
+        title: "Blue",
+      },
+      {
+        id: "10",
+        title: "Lavender",
+      },
+    ],
+  },
+
+  // All Product data
+
+  all_product: {
+    product_page: [
+      {
+        id: "1",
+        img: productPageImg1,
+        link: "/products_details",
+        title: "Make Me Blush",
+        price: "$48-78",
+        desc: "SHIPPED IN A BOX",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "2",
+        img: productPageImg2,
+        link: "/products_details",
+        bSeller: "Best Seller",
+        title: "Birthday Brights Bouquet",
+        price: "$45-70",
+        desc: "FARM-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "3",
+        img: productPageImg3,
+        link: "/products_details",
+        title: "Cookie Bundle",
+        price: "$55-95",
+        desc: "FLORIST-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "4",
+        img: productPageImg4,
+        link: "/products_details",
+        title: "Truffle Bundle",
+        price: "$48-78",
+        desc: "SHIPPED IN A BOX",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "5",
+        img: productPageImg5,
+        link: "/products_details",
+        bSeller: "Best Seller",
+        title: "Flutter By Bouquet",
+        price: "$45-70",
+        desc: "FARM-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "6",
+        img: productPageImg6,
+        link: "/products_details",
+        title: "Pink Roses",
+        price: "$55-95",
+        desc: "FLORIST-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "7",
+        img: productPageImg7,
+        link: "/products_details",
+        title: "Picnic Tulips",
+        price: "$48-78",
+        desc: "SHIPPED IN A BOX",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "8",
+        img: productPageImg8,
+        link: "/products_details",
+        bSeller: "Best Seller",
+        title: "Mixed Roses",
+        price: "$45-70",
+        desc: "FARM-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "9",
+        img: productPageImg9,
+        link: "/products_details",
+        title: "Fiesta Bouquet",
+        price: "$55-95",
+        desc: "FLORIST-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "10",
+        img: productPageImg10,
+        link: "/products_details",
+        title: "Picnic Tulips",
+        price: "$48-78",
+        desc: "SHIPPED IN A BOX",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "11",
+        img: productPageImg11,
+        link: "/products_details",
+        bSeller: "Best Seller",
+        title: "Mixed Roses",
+        price: "$45-70",
+        desc: "FARM-TO-DOOR",
+        btnLink: "/",
+        btnText: "Ad to Cart",
+      },
+      {
+        id: "12",
+        img: productPageImg12,
+        link: "/products_details",
         title: "Fiesta Bouquet",
         price: "$55-95",
         desc: "FLORIST-TO-DOOR",
