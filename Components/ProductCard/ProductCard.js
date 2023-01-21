@@ -3,9 +3,10 @@ import StyledProductCard from "./StyledProductCard";
 import Button from "./../Button/Button";
 import {H5, SmPara} from "../../styles/ShareStyles";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProductCard = ({props}) => {
- const {img,  bSeller, title, price, desc, btnLink, btnText}= props
+ const {img, link, bSeller, title, price, desc, btnLink, btnText}= props
   return (
     <StyledProductCard>
       <div className="thumbnail">
@@ -17,6 +18,7 @@ const ProductCard = ({props}) => {
           width="auto"
         />
         {bSeller && <span className="thumbnail__seller">{bSeller}</span>}
+        <Link href={link} className="thumbnail__link"></Link>
       </div>
       <div className="text">
         <H5 className="text__title">{title}</H5>

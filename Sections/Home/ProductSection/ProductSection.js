@@ -15,7 +15,7 @@ const ProductSection = () => {
           <H2 className="header__title">Shop Best Flowers & Gifts For You</H2>
 
           <div className="header__btn">
-            <Button href="/" text="Browse More" variant="transparent" />
+            <Button href="/all_products" text="Browse More" variant="transparent" />
           </div>
 
         </div>
