@@ -124,8 +124,10 @@ const StyledNavbar = styled.nav`
       display: none;
     }
   }
-
-  
+  .open__search {
+    opacity: 1;
+    visibility: visible;
+  }
 `;
 
 export default StyledNavbar;

@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import StyledNavbar from "./StyledNavbar";
 import Search from "./../icons/Search";
 import DownArrow from "./../icons/DownArrow";
 import Link from "next/link";
-import DATA from './../../Data/Data';
-import Button from './../Button/Button';
+import DATA from "./../../Data/Data";
+import Button from "./../Button/Button";
+import SearchPopUp from "../SearchPopup/SearchPopUp";
 
 const Navbar = () => {
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
   return (
     <StyledNavbar>
       <ul className="nav">
@@ -19,7 +22,7 @@ const Navbar = () => {
           </Link>
 
           <ul className="sub__menu">
-            {DATA.header.Occasions.map(({to, name}, index) => {
+            {DATA.header.Occasions.map(({ to, name }, index) => {
               return (
                 <li className="sub__menu__item item" key={index}>
                   <Link href={to} className="sub__menu__link link">
@@ -40,7 +43,7 @@ const Navbar = () => {
           </Link>
 
           <ul className="sub__menu">
-            {DATA.header.Flowers.map(({to, name}, index) => {
+            {DATA.header.Flowers.map(({ to, name }, index) => {
               return (
                 <li className="sub__menu__item item" key={index}>
                   <Link href={to} className="sub__menu__link link">
@@ -64,7 +67,10 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li className="nav__item item">
+        <li
+          className="nav__item item"
+          onClick={() => setIsSearchOpen((prev) => !prev)}
+        >
           <Link href="/" className="nav__link link">
             <span className="nav__link__search__icon">
               <Search />
@@ -77,6 +83,12 @@ const Navbar = () => {
           <Button variant="smBtn" text="Sign In" />
         </li>
       </ul>
+      {/* Search Popup Component */}
+      <SearchPopUp
+        isSearchOpen={isSearchOpen}
+        setIsSearchOpen={setIsSearchOpen}
+      />
+      {/* Search Popup Component */}
     </StyledNavbar>
   );
 };

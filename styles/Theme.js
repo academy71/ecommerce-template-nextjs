@@ -12,6 +12,13 @@ const THEME = {
     btnPrimary: "#00574E",
     btnSecondary: "#FAE5B9",
     btnHover: "#FFD231",
+    red: "#FF0000",
+    yellow: "#F1DD00",
+    purple: "#C133CD",
+    orange: "#FF942B",
+    blue: "#009AD9",
+    pink: "#FFB1E8",
+    green: "#22C813",
   },
 
   fontFamily: {
