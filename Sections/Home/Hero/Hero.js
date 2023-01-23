@@ -28,7 +28,7 @@ const Hero = () => {
               creative design into a floral masterpiece.
             </LgPara>
 
-            <Button href="/" variant="primary" text="Browse Flower" />
+            <Button href="/all_products" variant="primary" text="Browse Flower" />
 
           </div>
 

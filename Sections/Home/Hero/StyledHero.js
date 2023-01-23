@@ -11,12 +11,15 @@ const StyledHero = styled.section`
     background-image: url(${(props) => props.image.src});
     background-position: right;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
   }
 
   .hero__header {
     max-width: 100%;
     width: 100%;
     margin-bottom: 100px;
+    padding-top: 55px;
 
     ${media.up("lg")} {
       max-width: 570px;

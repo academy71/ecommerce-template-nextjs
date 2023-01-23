@@ -4,9 +4,11 @@ import THEME from "./../../styles/Theme";
 
 const StyledHeader = styled.header`
   position: relative;
-  padding: 36px 0;
+  padding: 30px 0;
   background-color: ${THEME.colors.bgPrimary};
-
+  ${media.up("lg")} {
+    padding: 36px 0;
+  }
   .header__inner {
     display: flex;
     align-items: center;
@@ -20,11 +22,12 @@ const StyledHeader = styled.header`
       position: fixed;
       top: 0;
       left: 0;
-      /* width: 100%; */
-      /* height: 100%; */
+      width: 100%;
+      height: 100%;
       transition: all ease-in-out 0.15s;
-      /* background: rgba(62, 1, 47, .7); */
+      background: rgba(62, 1, 47, 0.7);
       padding: 18px 0 0 18px;
+      z-index: 1111;
     }
   }
 
@@ -81,7 +84,7 @@ const StyledHeader = styled.header`
     width: 100%;
     height: 100vh;
     padding: 18px;
-    z-index: 11;
+    z-index: 9999;
     display: none;
     background: rgba(62, 1, 47, 0.7);
 
@@ -105,6 +108,7 @@ const StyledHeader = styled.header`
 
       &__btn__active {
         background-color: ${THEME.colors.btnSecondary} !important;
+        border: 1px solid transparent !important;
       }
 
       &__btn {

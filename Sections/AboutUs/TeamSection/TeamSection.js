@@ -2,7 +2,6 @@ import React from "react";
 import StyledTeamSection from "./StyledTeamSection";
 import Container from "./../../../Components/Container/Container";
 import {H2} from "../../../styles/ShareStyles";
-// import MemberCard from '../../../Components/MemberCard/MemberCard';
 import DATA from "./../../../Data/Data";
 import MemberCard from "../../../Components/MemberCard/MemberCard";
 

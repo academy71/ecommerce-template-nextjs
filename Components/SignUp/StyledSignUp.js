@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import media from "../../styles/Responsive";
-import THEME from './../../styles/Theme';
+import THEME from "./../../styles/Theme";
 
 const StyledSignUp = styled.div`
   padding: 38px 28px 28px;
@@ -37,32 +37,17 @@ const StyledSignUp = styled.div`
       }
     }
 
-    &__text {
-      color: ${THEME.colors.textSecondary};
-      margin-bottom: 16px;
-
-      &:last-child {
-        margin-bottom: 32px;
-      }
-
-      &__checkbox {
-        border: 1px solid ${THEME.colors.chineseSilver};
-        width: 14px;
-        height: 14px;
-        margin-right: 6px;
-      }
-
-      &__link {
-        font-weight: ${THEME.fontWeight.weightSemiBold};
-        color: ${THEME.colors.btnPrimary};
-      }
+    &__checkbox {
+      margin-top: 0;
     }
-    &__btn{
+
+    &__btn {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 32px;
     }
-    
+
     .primary {
       width: 315px;
       padding: 10px 0;
@@ -74,4 +59,4 @@ const StyledSignUp = styled.div`
   }
 `;
 
-export default StyledSignUp
+export default StyledSignUp;

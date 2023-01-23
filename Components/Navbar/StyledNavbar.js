@@ -3,6 +3,7 @@ import media from "../../styles/Responsive";
 import THEME from "./../../styles/Theme";
 
 const StyledNavbar = styled.nav`
+width: fit-content;
   .nav {
     display: flex;
     align-items: center;

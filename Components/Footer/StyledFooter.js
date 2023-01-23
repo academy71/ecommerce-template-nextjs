@@ -5,8 +5,8 @@ import { media } from "./../../styles/Responsive";
 const StyledFooter = styled.footer`
   background-color: ${THEME.colors.bgPrimary};
   padding: 100px 0 28px 0;
-  ${media.up("md")} {
-    padding: 83px 0;
+  ${media.up("lg")} {
+    padding: 150px 0 28px 0;
   }
 
   .footer__text__center {

@@ -3,11 +3,10 @@ import media from "../../../styles/Responsive";
 import THEME from "./../../../styles/Theme";
 
 const StyledProductSection = styled.section`
-  padding: 150px 0;
+  padding: 100px 0;
   background-color: ${THEME.colors.bgPrimary};
   position: relative;
   
-
   .header {
     margin-bottom: 28px;
 
@@ -27,17 +26,16 @@ const StyledProductSection = styled.section`
     &__btn {
       ${media.down("lg")} {
         position: absolute;
-        bottom: 72px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
       }
-      .transparent{
+      .transparent {
         padding: 15px 35px;
       }
     }
   }
   .cards {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

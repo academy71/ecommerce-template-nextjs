@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import StyleedTestimonial from "./StyledTestimonial";
+import React from "react";
+import StyledTestimonial from "./StyledTestimonial";
 import Container from "./../../../Components/Container/Container";
 import { H2, H4, H5, MdPara } from "./../../../styles/ShareStyles";
 import Image from "next/image";
@@ -16,7 +16,7 @@ import "swiper/css/navigation";
 
 const Testimonial = () => {
   return (
-    <StyleedTestimonial>
+    <StyledTestimonial>
       <Container>
         <H2 className="testimonial__title">
           Here’s What Our Customers Are Saying
@@ -76,7 +76,7 @@ const Testimonial = () => {
           </Swiper>
         </div>
       </Container>
-    </StyleedTestimonial>
+    </StyledTestimonial>
   );
 };
 

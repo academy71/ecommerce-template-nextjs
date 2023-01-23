@@ -3,9 +3,12 @@ import THEME from "./../../../styles/Theme";
 import media from "./../../../styles/Responsive";
 
 const StyledTeamSection = styled.section`
-  padding: 100px 0;
+  padding-top: 100px;
   background-color: ${THEME.colors.bgPrimary};
-
+  
+  ${media.up("lg")} {
+    padding-top: 150px;
+  }
   .title {
     text-align: center;
     margin-bottom: 70px;

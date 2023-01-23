@@ -2,9 +2,12 @@ import styled from "styled-components";
 import { media } from "./../../../styles/Responsive";
 import THEME from "./../../../styles/Theme";
 
-const StyleedTestimonial = styled.section`
+const StyledTestimonial = styled.section`
   background-color: ${THEME.colors.bgPrimary};
   padding: 100px 0;
+  ${media.up("lg")} {
+    padding: 150px 0;
+  }
   .testimonial__title {
     ${media.down("lg")} {
       margin-bottom: 28px;
@@ -127,4 +130,4 @@ const StyleedTestimonial = styled.section`
   }
 `;
 
-export default StyleedTestimonial;
+export default StyledTestimonial;

@@ -364,7 +364,7 @@ const DATA = {
         title: "Summer Sunset",
         price: "$60-93",
         desc: "FLORIST-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -374,7 +374,7 @@ const DATA = {
         title: "Make Me Blush",
         price: "$45-70",
         desc: "FARM-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -385,7 +385,7 @@ const DATA = {
         title: "Smiles & Sunshine",
         price: "$48-78",
         desc: "SHIPPED IN A BOX",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -395,7 +395,7 @@ const DATA = {
         title: "Fiesta Bouquet",
         price: "$55-95",
         desc: "FLORIST-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
     ],
@@ -529,7 +529,7 @@ const DATA = {
         title: "Make Me Blush",
         price: "$48-78",
         desc: "SHIPPED IN A BOX",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -540,7 +540,7 @@ const DATA = {
         title: "Birthday Brights Bouquet",
         price: "$45-70",
         desc: "FARM-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -550,7 +550,7 @@ const DATA = {
         title: "Cookie Bundle",
         price: "$55-95",
         desc: "FLORIST-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -560,7 +560,7 @@ const DATA = {
         title: "Truffle Bundle",
         price: "$48-78",
         desc: "SHIPPED IN A BOX",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -571,7 +571,7 @@ const DATA = {
         title: "Flutter By Bouquet",
         price: "$45-70",
         desc: "FARM-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -581,7 +581,7 @@ const DATA = {
         title: "Pink Roses",
         price: "$55-95",
         desc: "FLORIST-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -591,7 +591,7 @@ const DATA = {
         title: "Picnic Tulips",
         price: "$48-78",
         desc: "SHIPPED IN A BOX",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -602,7 +602,7 @@ const DATA = {
         title: "Mixed Roses",
         price: "$45-70",
         desc: "FARM-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -612,7 +612,7 @@ const DATA = {
         title: "Fiesta Bouquet",
         price: "$55-95",
         desc: "FLORIST-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -622,7 +622,7 @@ const DATA = {
         title: "Picnic Tulips",
         price: "$48-78",
         desc: "SHIPPED IN A BOX",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -633,7 +633,7 @@ const DATA = {
         title: "Mixed Roses",
         price: "$45-70",
         desc: "FARM-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
       {
@@ -643,7 +643,7 @@ const DATA = {
         title: "Fiesta Bouquet",
         price: "$55-95",
         desc: "FLORIST-TO-DOOR",
-        btnLink: "/",
+        btnLink: "/cart",
         btnText: "Ad to Cart",
       },
     ],
