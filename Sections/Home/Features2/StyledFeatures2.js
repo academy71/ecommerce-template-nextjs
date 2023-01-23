@@ -5,6 +5,9 @@ import THEME from "./../../../styles/Theme";
 const StyledFeatures2 = styled.section`
   padding: 100px 0;
   background-color: ${THEME.colors.bgPrimary};
+  ${media.up("lg")} {
+    padding: 150px 0;
+  }
   .features2__row {
     justify-content: center;
     ${media.up("lg")} {

@@ -2,11 +2,11 @@ import React from "react";
 import StyledFilter from "./StyledFilter";
 import ZipCode from "./../zipCode/ZipCode";
 // import ZipCodeResult from '../ZipCodeResult/ZipCodeResult';
-import Checkbox from "./../Checkbox/Checkbox";
 import {H5} from "../../../styles/ShareStyles";
 import DATA from "../../../Data/Data";
 import TopArrow from "../../../Components/icons/topArrow";
 import CloseIcon from './../../../Components/icons/CloseIcon';
+import Checkbox from "../../../Components/Checkbox/Checkbox";
 
 const Filter = ({FilterOpenClick}) => {
   return (

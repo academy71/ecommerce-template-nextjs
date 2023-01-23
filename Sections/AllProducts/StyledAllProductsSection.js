@@ -3,10 +3,12 @@ import media from "../../styles/Responsive";
 import THEME from "./../../styles/Theme";
 
 const StyledAllProductsSection = styled.section`
-  padding-bottom: 50px;
+  padding: 30px 0 100px 0;
   background-color: ${THEME.colors.bgPrimary};
   position: relative;
-
+  ${media.up("lg")} {
+    padding: 80px 0 100px 0;
+  }
   /* all product section header  */
 
   .header {

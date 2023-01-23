@@ -1,10 +1,9 @@
-import React from "react";
 import styled from "styled-components";
-import THEME from "./../../../styles/Theme";
+import THEME from './../../styles/Theme';
 
 const StyledCheckbox = styled.div`
   margin-top: 14px;
-  
+
   .input {
     display: none;
   }
@@ -24,13 +23,13 @@ const StyledCheckbox = styled.div`
       border: 1px solid ${THEME.colors.btnPrimary};
       border-radius: 2px;
       left: 0px;
-      bottom: 50%;
+      top: -7px;
       transform: translateY(50%);
     }
     &::after {
       content: "";
       position: absolute;
-      top: -6px;
+      top: -7px;
       left: 0;
       width: 16px;
       height: 16px;
@@ -41,6 +40,11 @@ const StyledCheckbox = styled.div`
       transform: translateY(50%);
       opacity: 0;
     }
+
+    &__link {
+      font-weight: ${THEME.fontWeight.weightSemiBold};
+      color: ${THEME.colors.btnPrimary};
+    }
   }
   .input[type="checkbox"]:checked + label::after {
     opacity: 1;
@@ -49,15 +53,5 @@ const StyledCheckbox = styled.div`
   }
 `;
 
-const Checkbox = ({title}) => {
-  return (
-    <StyledCheckbox>
-      <input type="checkbox" name={title} id={title} className="input" />
-      <label htmlFor={title} className="label">
-        {title}
-      </label>
-    </StyledCheckbox>
-  );
-};
 
-export default Checkbox;
+export default StyledCheckbox

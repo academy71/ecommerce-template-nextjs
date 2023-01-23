@@ -6,9 +6,9 @@ import Link from "next/link";
 import DATA from './../../Data/Data';
 import Button from './../Button/Button';
 
-const Navbar = () => {
+const Navbar = ({mobileMenuRef,setAuthForm}) => {
   return (
-    <StyledNavbar>
+    <StyledNavbar ref={mobileMenuRef}>
       <ul className="nav">
         <li className="nav__item item menu">
           <Link href="/" className="nav__link link">
@@ -65,15 +65,15 @@ const Navbar = () => {
         </li>
 
         <li className="nav__item item">
-          <Link href="/" className="nav__link link">
+          <span className="nav__link link">
             <span className="nav__link__search__icon">
               <Search />
             </span>
             <span className="nav__link__text">Search</span>
-          </Link>
+          </span>
         </li>
 
-        <li className="nav__item item signIn__btn">
+        <li className="nav__item item signIn__btn" onClick={()=>setAuthForm(true)}>
           <Button variant="smBtn" text="Sign In" />
         </li>
       </ul>

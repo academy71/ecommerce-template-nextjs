@@ -43,7 +43,7 @@ const Features3 = () => {
         </div>
 
         <div className="btn">
-          <Button href="/" variant="smBtn" text="Browse Flower" />
+          <Button href="/all_products" variant="smBtn" text="Browse Flower" />
         </div>
 
       </Container>

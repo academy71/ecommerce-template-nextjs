@@ -4,7 +4,10 @@ import { media } from "./../../../styles/Responsive";
 
 const StyledCategory = styled.section`
   background-color: ${THEME.colors.bgPrimary};
-  padding: 100px 0;
+  padding-top: 100px;
+  ${media.up("lg")} {
+    padding-top: 0;
+  }
   .category__title {
     max-width: 470px;
     margin: 0 auto;

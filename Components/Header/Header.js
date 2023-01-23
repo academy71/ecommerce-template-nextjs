@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import StyledHeader from "./StyledHeader";
 import Container from "./../Container/Container";
 import Image from "next/image";
@@ -9,38 +9,40 @@ import Button from "../Button/Button";
 import MobileBtn from "./../icons/mobileBtn";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
+import Link from "next/link";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [authForm, setAuthForm] = useState(false);
   const [signInUpForm, setSignInUpForm] = useState(1);
-
-  const MobileMenuClick = () => {
-    setMobileMenu((mobileMenu) => !mobileMenu);
+  const formRef = useRef();
+  const mobileMenuRef = useRef()
+  
+  const AuthFormClose = (e) => {
+    if (!formRef.current.contains(e.target)) {
+      setAuthForm(false);
+    }
   };
-
-  const AuthFormClick = () => {
-    setAuthForm((authForm) => !authForm);
+  const mobileMenuClose = (e) => {
+    if (!mobileMenuRef.current.contains(e.target)) {
+      setMobileMenu(false);
+    }
   };
-
-  const SignInUpFormClick = (index) => {
-    setSignInUpForm(index);
-  };
-
 
   return (
     <StyledHeader>
       <Container>
         <div className="header__inner">
           <div className="left">
-            <a href="/" className="logo">
+            <Link href="/" className="logo">
               <Image src={logo} alt="logo" />
-            </a>
+            </Link>
           </div>
           <div
             className={mobileMenu ? "middle open__menu" : "middle close__menu"}
+            onClick={mobileMenuClose}
           >
-            <Navbar />
+            <Navbar mobileMenuRef={mobileMenuRef} setAuthForm={setAuthForm}/>
           </div>
           <div className="right">
             <div className="cart">
@@ -49,10 +51,10 @@ const Header = () => {
               </div>
             </div>
             <div className="btn">
-              <div className="btn__signIn" onClick={AuthFormClick}>
+              <div className="btn__signIn" onClick={() => setAuthForm(true)}>
                 <Button variant="smBtn" text="Sign In" />
               </div>
-              <div className="btn__mobile" onClick={MobileMenuClick}>
+              <div className="btn__mobile" onClick={() => setMobileMenu(true)}>
                 <MobileBtn />
               </div>
             </div>
@@ -68,8 +70,9 @@ const Header = () => {
             ? "sign__in__up__form auth__form__open"
             : "sign__in__up__form auth__form__close"
         }
+        onClick={AuthFormClose}
       >
-        <div className="content">
+        <div className="content" ref={formRef}>
           <div className="buttons">
             <button
               className={
@@ -77,7 +80,7 @@ const Header = () => {
                   ? "buttons__btn buttons__btn__active"
                   : "buttons__btn"
               }
-              onClick={() => SignInUpFormClick(1)}
+              onClick={() => setSignInUpForm(1)}
             >
               Sign In
             </button>
@@ -87,7 +90,7 @@ const Header = () => {
                   ? "buttons__btn buttons__btn__active"
                   : "buttons__btn"
               }
-              onClick={() => SignInUpFormClick(2)}
+              onClick={() => setSignInUpForm(2)}
             >
               Sign Up
             </button>

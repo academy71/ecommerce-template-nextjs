@@ -4,6 +4,7 @@ import THEME from "../../styles/Theme";
 
 const StyledSignIn = styled.div`
   padding: 38px 28px 28px;
+  
   .sign__in__title {
     margin-bottom: 32px;
     text-align: center;
@@ -47,11 +48,9 @@ const StyledSignIn = styled.div`
       }
 
       &__checkbox {
-        border: 1px solid ${THEME.colors.chineseSilver};
-        width: 14px;
-        height: 14px;
-        margin-right: 6px;
+        margin-top: 0;
       }
+
       &__link {
         color: ${THEME.colors.textSecondary};
       }
@@ -109,12 +108,12 @@ const StyledSignIn = styled.div`
     &__btn {
       display: flex;
       align-items: center;
-      justify-content: center;
       column-gap: 13px;
       padding: 12px 26px 12px 12px;
       border: 1px solid ${THEME.colors.chineseSilver};
       background-color: ${THEME.colors.white};
       outline: none;
+      width: 255px;
 
       &__text {
         font-family: ${THEME.fontFamily.manrope};

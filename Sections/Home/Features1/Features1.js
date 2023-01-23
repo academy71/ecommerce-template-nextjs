@@ -58,7 +58,7 @@ const Features1 = () => {
             Choose an assortment for your event, or pick a single stem and
             witness the beauty of a venue or dinner table come alive.
           </LgPara>
-          <Button href="/" text="Browse Our Collection" variant="primary" />
+          <Button href="/all_products" text="Browse Our Collection" variant="primary" />
         </div>
       </Container>
     </StyledFeature1>

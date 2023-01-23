@@ -4,8 +4,8 @@ const Google = () => {
    return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width="28"
+      height="30"
       x="0"
       y="0"
       viewBox="0 0 48 48"
